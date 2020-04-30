@@ -18,6 +18,11 @@
 <?import java.lang.String?>
 
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TitledPane?>
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="Click Me">
@@ -78,4 +83,16 @@
         </items>
     </ChoiceBox>
 
+    <Slider GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="4"
+            min="0" max="100" showTickLabels="true" showTickMarks="true" minorTickCount="4" snapToTicks="true"/>
+
+    <Spinner GridPane.columnIndex="5" GridPane.rowIndex="2"
+             min="0" max="100" editable="true"/>
+
+    <ColorPicker GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <DatePicker GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <TitledPane text="Titled Pane" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <Label text="Label in titled pane"/>
+    </TitledPane>
 </GridPane>
